@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="master1.unice.com.main.ViewSharedTrip"
+    tools:showIn="@layout/activity_view_shared_trip">
+    <ScrollView
+        android:id="@+id/viewsharedtrip_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/viewsharedtripvalue_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/SharedTrip_Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="36dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="Name of Trip"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="63dp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/SharedTrip_Source"
+                    android:layout_width="wrap_content"
+                    android:layout_height="43dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="Source of Trip"
+                    tools:layout_editor_absoluteX="63dp"
+                    tools:layout_editor_absoluteY="111dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/SharedTrip_Destination"
+                    android:layout_width="wrap_content"
+                    android:layout_height="43dp"
+                    android:inputType="textPersonName"
+                    android:hint="Destination of Trip"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.432"
+                    tools:layout_editor_absoluteX="63dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/SharedTrip_Start_Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="date"
+                    android:hint="Start Date of Trip"
+                    tools:layout_editor_absoluteX="63dp"
+                    tools:layout_editor_absoluteY="266dp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/SharedTrip_End_Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="date"
+                    android:hint="End Date of Trip"
+                    tools:layout_editor_absoluteX="63dp"
+                    tools:layout_editor_absoluteY="336dp" />
+            </android.support.design.widget.TextInputLayout>
+
+           <!-- <Button
+                android:id="@+id/CreateService_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Create Service for this trip"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:layout_editor_absoluteX="100dp" />-->
+
+            <Button
+                android:id="@+id/ViewSharedServices_Trip_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="View Services for this trip"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:layout_editor_absoluteX="121dp" />
+
+            <!--<Button
+                android:id="@+id/AddServices_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Modify Services"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:layout_editor_absoluteX="121dp" />-->
+
+            <!--<Button
+                android:id="@+id/Update_Trip_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Update Trip"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:layout_editor_absoluteX="121dp" />-->
+            <Button
+                android:id="@+id/Import_SharedTrip_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Add This Trip"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:layout_editor_absoluteX="121dp" />
+            <Button
+                android:id="@+id/Delete_SharedTrip_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Delete Trip"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:layout_editor_absoluteX="121dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="master1.unice.com.main.HomeActivity"
+    tools:showIn="@layout/activity_home">
+
+    <ScrollView
+        android:id="@+id/homevalue_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/homevaluelayout_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/Welcome"
+            android:layout_width="365dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="36dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="63dp" />
+        <Button
+            android:id="@+id/Home_CreateTrip_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Create Your Trip"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="100dp" />
+
+        <Button
+            android:id="@+id/Home_View_Trips_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="View Your Trips"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="100dp" />
+
+
+
+        <Button
+            android:id="@+id/Home_ViewService_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="View Services"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="100dp" />
+
+        <Button
+            android:id="@+id/Home_ViewSharedEvents_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="View Shared Events"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="100dp" />
+
+    </LinearLayout>
+</ScrollView>
+
+</android.support.constraint.ConstraintLayout>

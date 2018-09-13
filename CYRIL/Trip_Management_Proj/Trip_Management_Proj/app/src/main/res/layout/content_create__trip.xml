@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".CreateTrip"
+    tools:showIn="@layout/activity_create__trip">
+
+    <ScrollView
+        android:id="@+id/createtrip_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/createtripvalue_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/Trip_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginTop="36dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Enter Name of Trip"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="63dp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/Trip_Source"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Enter the Starting Point"
+                tools:layout_editor_absoluteX="63dp"
+                tools:layout_editor_absoluteY="111dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/Trip_Destination"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Enter the Destination Point"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.432"
+                tools:layout_editor_absoluteX="63dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/Trip_Start_Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date"
+                android:hint="Select Start Date"
+                tools:layout_editor_absoluteX="63dp"
+                tools:layout_editor_absoluteY="266dp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/Trip_End_Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date"
+                android:hint="Select End Date"
+                tools:layout_editor_absoluteX="63dp"
+                tools:layout_editor_absoluteY="336dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/Trip_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Submit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:layout_editor_absoluteX="121dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
